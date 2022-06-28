@@ -1,0 +1,162 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body {
+    background: rgb(134, 225, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+}
+.Bloc{
+    position:relative;
+    width: 100%;
+    max-width: 1250px;
+    min-height: 1200px;
+    background: white;
+    margin: 50px;  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 65px 95px rgb(0, 0, 0);
+}
+.Bloc .Bloc_gauche{
+    position: relative;
+    background: rgb(151, 16, 16);
+    padding: 20%;
+}
+.Texte_profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(148, 148, 148);
+
+}
+.Texte_profile .Photo_de_profil{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.Texte_profile .Photo_de_profil img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Texte_profile h2 {
+    color: white;
+    font-size: 1.6em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.Texte_profile h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.Info_contact {
+    padding-top: 40px;
+}
+.titre{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.Info_contact ul {
+    position: relative;
+}
+.Info_contact ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.Info_contact ul li .icone {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(255, 109, 109);
+}
+.Info_contact ul li span {
+    color: white;
+    font-weight: 300;
+}
+.Info_contact.Formations li{
+    margin-bottom: 15px;
+}
+.Info_contact.Formations h5{
+    color: rgb(255, 109, 109);
+    font-weight: 500;
+}
+.Info_contact.Formations h4:nth-child(2){
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.Info_contact.Formations h4{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.Info_contact.langues .pourcentage{
+    position: relative;
+    width: 90%;
+    height: 6px;
+    background: #b1b1b1;
+    display: block;
+    margin-top: 5px;
+}
+.Info_contact.langues .pourcentage div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(255, 109, 109);
+}
+.Bloc .Bloc_droit{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 10%;
+}
+.A_propos{
+    margin-bottom: 50px;
+}
+.A_propos:last-child{
+    margin-bottom: 0;
+}
+.titre2{
+    color:rgb(255, 109, 109);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.A_propos .box {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+}
+.A_propos .box .Société_année {
+    min-width: 180px;
+}
+.A_propos .box .Société_année h5 {
+    text-transform: uppercase;
+    color: rgb(145, 145, 145); 
+}
+.A_propos .box .Société_année h4 {
+    text-transform: uppercase;
+    color: rgb(231, 0, 0); 
+    font-size: 40px;
+
+}
+
